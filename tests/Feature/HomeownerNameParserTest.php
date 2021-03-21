@@ -135,6 +135,40 @@ class HomeownerNameParserTest extends TestCase
                 ]
             ],
             [
+                'Mr Tom Staff and Mr J. Doe',
+                [
+                    [
+                        'title'      => 'Mr',
+                        'first_name' => 'Tom',
+                        'initial'    => null,
+                        'last_name'  => 'Staff',
+                    ],
+                    [
+                        'title'      => 'Mr',
+                        'first_name' => null,
+                        'initial'    => 'J',
+                        'last_name'  => 'Doe',
+                    ],
+                ]
+            ],
+            [
+                'Mr T. Staff and Mr J Doe',
+                [
+                    [
+                        'title'      => 'Mr',
+                        'first_name' => null,
+                        'initial'    => 'T',
+                        'last_name'  => 'Staff',
+                    ],
+                    [
+                        'title'      => 'Mr',
+                        'first_name' => null,
+                        'initial'    => 'J',
+                        'last_name'  => 'Doe',
+                    ],
+                ]
+            ],
+            [
                 'Dr P Gunn',
                 [
                     [
